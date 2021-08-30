@@ -1,0 +1,151 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+void main()
+{
+ int x,y,r,choice,fact=1,num,i;
+ float f;
+ menu:
+ clrscr();
+ printf("\n\n\n\n");
+ printf("\n\t\t\t * * * * * * * * * * * * * * * * * *");
+ printf("\n\t\t\t *         1 Addition              *");
+ printf("\n\t\t\t *         2 Subtraction           *");
+ printf("\n\t\t\t *         3 Multiplication        *");
+ printf("\n\t\t\t *         4 Division              *");
+ printf("\n\t\t\t *         5 Reminder              *");
+ printf("\n\t\t\t *         6 Square                *");
+ printf("\n\t\t\t *         7 Cube                  *");
+ printf("\n\t\t\t *         8 Square root           *");
+ printf("\n\t\t\t *         9 Cube root             *");
+ printf("\n\t\t\t *         10 Factorial            *");
+ printf("\n\t\t\t *         11 Exit                 *");
+ printf("\n\t\t\t * * * * * * * * * * * * * * * * * *");
+ printf("\n\t\t\t Enter your choice :- ");
+ scanf("%d",&choice);
+ switch(choice)
+ {
+  case 1:
+   clrscr();
+   printf("\n\n\n\n");
+   printf("\n\t\t\t Addition of two number \n");
+   printf("\n\t\t\t Enter the value of x :- ");
+   scanf("%d",&x);
+   printf("\n\t\t\t Enter the value of y :- ");
+   scanf("%d",&y);
+   r=x+y;
+   printf("\n\t\t\t Sum of two number :- %d",r);
+   getch();
+   goto menu;
+  case 2:
+   clrscr();
+   printf("\n\n\n\n");
+   printf("\n\t\t\t Subtraction of two number \n");
+   printf("\n\t\t\t Enter the value of x :- ");
+   scanf("%d",&x);
+   printf("\n\t\t\t Enter the value of y :- ");
+   scanf("%d",&y);
+   r=x-y;
+   printf("\n\t\t\t Subtraction of two number :- %d",r);
+   getch();
+   goto menu;
+  case 3:
+   clrscr();
+   printf("\n\n\n\n");
+   printf("\n\t\t\t Multiplication of two number \n");
+   printf("\n\t\t\t Enter the value of x :- ");
+   scanf("%d",&x);
+   printf("\n\t\t\t Enter the value of y :- ");
+   scanf("%d",&y);
+   r=x*y;
+   printf("\n\t\t\t Multiplication of two number :- %d",r);
+   getch();
+   goto menu;
+  case 4:
+   clrscr();
+   printf("\n\n\n\n");
+   printf("\n\t\t\t Division of two number \n");
+   printf("\n\t\t\t Enter the value of x :- ");
+   scanf("%d",&x);
+   printf("\n\t\t\t Enter the value of y :- ");
+   scanf("%d",&y);
+   f=(float)x/y;
+   printf("\n\t\t\t Division of two number :- %f",f);
+   getch();
+   goto menu;
+  case 5:
+   clrscr();
+   printf("\n\n\n\n");
+   printf("\n\t\t\t Reminder of two number \n");
+   printf("\n\t\t\t Enter the value of x :- ");
+   scanf("%d",&x);
+   printf("\n\t\t\t Enter the value of y :- ");
+   scanf("%d",&y);
+   r=x%y;
+   printf("\n\t\t\t Reminder of two number :- %d",r);
+   getch();
+   goto menu;
+  case 6:
+   clrscr();
+   printf("\n\n\n\n");
+   printf("\n\t\t\t Square of the number \n");
+   printf("\n\t\t\t Enter the value of x :- ");
+   scanf("%d",&x);
+   r=x*x;
+   printf("\n\t\t\t Square of the number :- %d",r);
+   getch();
+   goto menu;
+  case 7:
+   clrscr();
+   printf("\n\n\n\n");
+   printf("\n\t\t\t Cube of the number \n");
+   printf("\n\t\t\t Enter the value of x :- ");
+   scanf("%d",&x);
+   r=x*x*x;
+   printf("\n\t\t\t Cube of the number :- %d",r);
+   getch();
+   goto menu;
+  case 8:
+   clrscr();
+   printf("\n\n\n\n");
+   printf("\n\t\t\t Square root of the number \n");
+   printf("\n\t\t\t Enter the value of x :- ");
+   scanf("%d",&x);
+   f=(float)sqrt(x);
+   printf("\n\t\t\t Square root of the number :- %f",f);
+   getch();
+   goto menu;
+  case 9:
+   clrscr();
+   printf("\n\n\n\n");
+   printf("\n\t\t\t Cube root of the number \n");
+   printf("\n\t\t\t Enter the value of x :- ");
+   scanf("%d",&x);
+   f=pow(x,1.0/3.0);
+   printf("\n\t\t\t Cube root of the number :- %f",f);
+   getch();
+   goto menu;
+  case 10:
+   clrscr();
+   printf("\n\n\n\n");
+   printf("\n\t\t\t Enter the number :- ");
+   scanf("%d",&num);
+   for(i=1;i<=num;i++)
+    fact=fact*i;
+   printf("\n\t\t\t Factorial :- %d",fact);
+   goto menu;
+  case 11:
+   clrscr();
+   printf("\n\n\n\n");
+   printf("\n\t\t\t Thank for using this application. \n");
+   getch();
+   break;
+  default:
+   clrscr();
+   printf("\n\n\n\n");
+   printf("\n\t\t\t Invalid Choice");
+   getch();
+   goto menu;
+ }
+}
+
